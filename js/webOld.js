@@ -4586,3 +4586,8 @@ web.require('ix').init([
   {"slug":"new-interaction","name":"New Interaction","value":{"style":{},"triggers":[]}}
 ]);
 
+
+setTimeout(function() {
+	$(".hero-section.centered").css("background-image")("-webkit-linear-gradient(270deg, rgba(46, 157, 255, .6), rgba(46, 157, 255, .32)), url('../images/StPetejpg');");
+	$(".hero-section.centered").css("background-image")("linear-gradient(180deg, rgba(46, 157, 255, .6), rgba(46, 157, 255, .32)), url('../images/StPete.jpg')");
+},5000);

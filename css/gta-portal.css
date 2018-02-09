@@ -84,9 +84,8 @@
 
 /************ SP Page Title ***********/
 .ms-core-pageTitle {
-  color: #00549D;
-  /*font-size: 32px; */
-  margin-top: 10px;
+  color: rgb(102, 124, 184);
+  font-size: 32px;
 }
 
 #contentRow {
@@ -119,7 +118,11 @@ a.ms-tv-header:hover {
 .ms-core-listMenu-horizontalBox .ms-core-listMenu-selected:visited,
 .ms-core-listMenu-horizontalBox .ms-core-listMenu-selected,
 .ms-tv-selected:link {
-  color: #2276bf;
+  color: #00549D;
+}
+
+.ms-core-pageTitle {
+  color: #00549D;
 }
 
 body {
@@ -142,7 +145,7 @@ h1 {
 h2 {
   margin-top: 0px;
   margin-bottom: 10px;
-  color: #676770;
+  color: #898992;
   font-size: 32px;
   line-height: 36px;
   font-weight: 300;
@@ -200,7 +203,7 @@ h6 {
 p {
   margin-top: 10px;
   margin-bottom: 10px;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 25px;
   font-weight: 300;
 }
@@ -228,28 +231,28 @@ a:hover {
 
 .container-links {
   padding: 0 15px;
-  min-height: 1020px;
+  min-height: 880px;
 }
 
 .container-links-left {
   border-left: solid 1px;
-  border-color: #69b9ff;
+  border-color: #4797DD;
 }
 
 .container-links-middle {
   border-left: solid 1px;
-  border-color: #69b9ff;
+  border-color: #4797DD;
 }
 
 .container-links-right {
   border-left: solid 1px;
   border-right: solid 1px;
-  border-color: #69b9ff;
+  border-color: #4797DD;
 }
 
 .container-links h5 {
   text-align: left;
-  color: #2276bf;
+  color: #00549D;
   margin-top: 10px;
   margin-bottom: 2px;
 }
@@ -264,7 +267,7 @@ a:hover {
   margin-left: 10px;
   padding: 12px 30px;
   border-radius: 4px;
-  background-color: #69b9ff;
+  background-color: #4797DD;
   -webkit-transition: background-color 300ms ease;
   transition: background-color 300ms ease;
   color: #fff;
@@ -324,7 +327,7 @@ a:hover {
   margin-top: 0px;
   margin-bottom: 0px;
   font-family: 'Open Sans', sans-serif;
-  color: #69b9ff;
+  color: #4797DD;
   font-size: 25px;
   line-height: 25px;
   font-weight: 300;
@@ -339,7 +342,7 @@ a:hover {
 
 .section {
   position: relative;
-  padding: 80px 10px;
+  padding: 60px 10px;
   background-color: #fff;
   text-align: center;
 }
@@ -364,17 +367,65 @@ a:hover {
   background-color: transparent;
 }
 
-#orgRow .white-box:hover {
-  cursor: pointer;
+.badge {
+  position: relative;
+}
+
+.badge:after {
+  content:"New";
+  position:absolute;
+  top: -10px;
+  right: -10px;
+  font-size: 14px;
+  background: green;
+  color: white;
+  width: 46px;
+  height: 32px;
+  text-align: center;
+  line-height: 18px;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 0 1px #333;
+  padding-top: 15px;
+  letter-spacing: 1px;
+  animation: swivel 2s 1;
+}
+
+@keyframes swivel {
+  0% {
+    rotate(0deg);
+  }
+  25% {
+    rotate(15deg);
+  }
+  50% {
+    rotate(-15deg);
+  }
+  75% {
+    rotate(7deg);
+  }
+  100% {
+    rotate(-7deg);
+  }  
 }
 
 #orgRow .white-box:hover {
-  background-color: #69b9ff;
-  color: #fff;
+  cursor: pointer;
+  background-color: #4797DD;
 }
 
 #orgRow h3 {
   min-height: 55px;
+}
+
+#orgRow .white-box:hover h3,
+#orgRow .white-box:hover p {
+  color: #fff;
+}
+
+#orgRow .white-box h3,
+#orgRow .white-box p {
+  transition: all .6s;
 }
 
 #hero-container {
@@ -390,7 +441,7 @@ a:hover {
   position: relative;
   padding-top: 175px;
   padding-bottom: 245px;
-  border-bottom: 4px solid #69b9ff;
+  border-bottom: 4px solid #4797DD;
   /*background-image: -webkit-linear-gradient(270deg, rgba(46, 157, 255, .5), rgba(46, 157, 255, .22)), url('../images/launchOnLookers.jpg');
   background-image: linear-gradient(180deg, rgba(46, 157, 255, .5), rgba(46, 157, 255, .22)), url('../images/launchOnLookers.jpg');     */
 
@@ -403,8 +454,8 @@ a:hover {
   background-image: linear-gradient(180deg, rgba(46, 157, 255, .6), rgba(46, 157, 255, .32)), url('../images/StPeteSkywayBridge.jpg');
 */
 
-  background-image: -webkit-linear-gradient(270deg, rgba(46, 157, 255, 0), rgba(0, 0, 0, 0.1) 30%, rgba(0, 0, 0, 0.4) 40%, rgba(0, 0, 0, 0.4) 55%, rgba(0, 0, 0, 0.1) 70%, rgba(46, 157, 255, 0)), url('../images/Miami.jpg');
-  background-image: linear-gradient(180deg, rgba(46, 157, 255, 0), rgba(0, 0, 0, 0.1) 30%, rgba(0, 0, 0, 0.4) 40%, rgba(0, 0, 0, 0.4) 55%, rgba(0, 0, 0, 0.1) 70%, rgba(46, 157, 255, 0)), url('../images/Miami.jpg');
+  background-image: -webkit-linear-gradient(270deg, rgba(46, 157, 255, 0), rgba(0, 0, 0, 0.1) 30%, rgba(0, 0, 0, 0.4) 40%, rgba(0, 0, 0, 0.4) 55%, rgba(0, 0, 0, 0.1) 70%, rgba(46, 157, 255, 0)), url('../images/heroImage/OrlandoSkyline2Web.jpg');
+  background-image: linear-gradient(180deg, rgba(46, 157, 255, 0), rgba(0, 0, 0, 0.1) 30%, rgba(0, 0, 0, 0.4) 40%, rgba(0, 0, 0, 0.4) 55%, rgba(0, 0, 0, 0.1) 70%, rgba(46, 157, 255, 0)), url('../images/heroImage/OrlandoSkyline2Web.jpg');
 
 /*
   background-image: -webkit-linear-gradient(270deg, rgba(46, 157, 255, .6), rgba(46, 157, 255, .32)), url('../images/PalmCoastStatePark.jpg');
@@ -424,12 +475,31 @@ a:hover {
 */
 
   background-position: 0% 0%, 50% 50%;
-  background-size: auto, cover;
+  /*background-size: auto, cover;*/
+  background-size: 100% 100%;
   text-align: center;
 }
 
+.hero-section.dev {
+  position: relative;
+  padding-top: 175px;
+  padding-bottom: 245px;
+  border-bottom: 4px solid #4797DD;
+
+ /* background-size: 100% 110%;*/
+
+  background-image: url('../images/heroImage/orlandoFlowers.jpg');
+
+
+
+  background-position: 0% 0%, 50% 50%;
+ /* background-size: auto, cover;*/
+  text-align: center;
+  /*background-size: 100% 100%;*/
+}
+
 .hero-heading {
-  opacity: 0;
+  /*opacity: 0;*/
   margin-bottom: 30px;
   color: #fff !important;
   font-size: 60px;
@@ -442,7 +512,7 @@ a:hover {
 .hero-subheading {
   opacity: 0;
   margin-bottom: 40px;
-  /*color: #2276BF;     */
+  /*color: #00549D;     */
   color: #efefef;
   font-size: 30px;
   line-height: 30px;
@@ -451,7 +521,17 @@ a:hover {
   text-transform: uppercase;
 }
 
+.txt-shadow {
+  text-shadow:
+    1px 1px 0 #333,
+    -1px -1px 0 #333,  
+    1px -1px 0 #333,
+    -1px  1px 0 #333,
+    1px  1px 0 #333;
+}
+
 .hero-img-location-text {
+  display: none;
   color: #dfdfdf;
   position:absolute;
   bottom: 5px;
@@ -461,6 +541,73 @@ a:hover {
 .hero-img-location-text a {
   color: #dfdfdf;
   cursor:pointer;
+}
+
+.camera-container {
+  display: flex;
+  position: absolute;
+  bottom: 5px;
+  right: 40px;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+}
+
+#camera {
+  width: 30px;
+  height: 25px;
+}
+
+.st0 {
+  fill: #ffffff;
+}
+
+.camera-container:hover .st0{
+  fill: #000000;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip a {
+  color: #2e9dff;
+}
+
+.tooltip .tooltiptext {
+    /*visibility: hidden;*/
+    display:none;
+    width: 300px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -45px;
+    right: 110%;
+}
+
+.tooltiptext a:hover {
+  color: #5fefff;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 75%;
+    left: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent black;
+}
+.camera-container:hover .tooltiptext {
+   /* visibility: visible;*/
+   display: block;
 }
 
 .hollow-button {
@@ -480,8 +627,8 @@ a:hover {
   text-transform: uppercase;
 }
 
-.hollow-button:visited{
-  color: #fff;
+.hollow-button:visited {
+  color: #ffffff;
 }
 
 .hollow-button:hover {
@@ -513,7 +660,7 @@ a:hover {
 }
 
 .section-heading.centered {
-  color: #676770;
+  color: #898992;
   font-size: 30px;
   font-weight: 300;
   text-align: center;
@@ -584,7 +731,7 @@ a:hover {
   padding: 20px;
   border: 10px solid #fff;
   border-radius: 50%;
-  background-color: #69b9ff;
+  background-color: #4797DD;
   box-shadow: 0 0 0 1px #2e9dff;
 }
 
@@ -693,47 +840,6 @@ html.w-mod-js *[data-ix="scale-on-scroll"] {
   transform: scale(0.01, 0.01);
 }
 
-@media (max-width: 1270px) {
-  .white-box h3 {
-    font-size: 16px;
-  }
-  .white-box p {
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 1130px) {
-  .white-box h3 {
-    font-size: 14px;
-  }
-  .white-box p {
-    font-size: 12px;
-  }
-}
-
-@media (max-width: 1060px){
-  .button.full-width {
-    margin-right: auto;
-    margin-left: auto;
-  }
-  .button.tab {
-    font-size: 12px;
-  }
-  .white-box {
-    margin-bottom: 30px;
-  }
-  .form-field.text-area {
-    display: block;
-  }
-  /*.grid-image {
-    width: 20%;
-    padding: 20px;
-  }*/
-  .spc {
-    margin-bottom: 30px;
-  }
-}
-
 @media (max-width: 991px) {
   .navigation-link {
     color: hsla(0, 0%, 100%, .52);
@@ -788,12 +894,6 @@ html.w-mod-js *[data-ix="scale-on-scroll"] {
   }
   .spc {
     margin-bottom: 30px;
-  }
-  .white-box h3 {
-    font-size: 18px;
-  }
-  .white-box p {
-    font-size: 16px;
   }
 }
 
