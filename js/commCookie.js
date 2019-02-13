@@ -2,8 +2,8 @@
 <script type="text/javascript" src="/sites/gta/SiteAssets/code/jquery/jquery-2.2.0.min.js"></script>
 
 <script>
-    var currentUrl =  "https://dorsp13.fdor.dor.state.fl.us/sites/gta";
-    var commListName = "Key Communications";
+    var currentUrl =  "https://dorsp13.fdor.dor.state.fl.us/sites/gta/news";
+    var commListName = "News";
 
   jQuery.ajax({
     url: currentUrl + "/_api/web/lists/getbytitle('" + commListName + "')/items?$top=1&$orderby=Created desc&$select=Created",

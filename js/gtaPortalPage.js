@@ -1,6 +1,6 @@
 var currentUrl =  "https://dorsp13.fdor.dor.state.fl.us/sites/gta";
 var spotlightListName = "spotlightOn";
-var commListName = "Key Communications";
+var commListName = "News";
 var recognitionListName = "Monthly GTA Achievement";
 
 function getCookie(cname) {
@@ -99,7 +99,7 @@ $.ajax({
   });
 
   $.ajax({
-    url: currentUrl + "/_api/web/lists/getbytitle('" + commListName + "')/items?$top=1&$orderby=Created desc&$select=Created",
+    url: currentUrl + "/news/_api/web/lists/getbytitle('" + commListName + "')/items?$top=1&$orderby=Created desc&$select=Created",
     method: 'GET',
     headers: { "Accept": "application/json; odata=verbose" },
     success: function (data) {
